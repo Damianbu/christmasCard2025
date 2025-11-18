@@ -1,0 +1,93 @@
+:root {
+    --blue: #015075;
+    --dark-blue: #19323c;
+
+    --red: #b60724;
+    --green: #038515;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    color: var(--dark-blue);
+}
+
+.red {
+    color: var(--red);
+}
+
+.green {
+    color: var(--green);
+}
+
+.nav {
+    background-color: var(--blue);
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__image {
+    width: 15rem;
+}
+
+.santa__image {
+    width: 100%;
+    box-shadow: 0 0 8px 8px #fff inset;
+}
+
+.ho__image {
+    width: 10rem;
+}
+
+.present-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.present__image {
+    width: 10rem;
+    transform: rotate(-20deg);
+}
+
+.xmas-content {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 25%, rgba(91, 114, 132) 100%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+.content__image {
+    width: 100%;
+    border-radius: 50%;
+    zoom: .2;
+}
+
+.content__picture {
+    padding: 2rem;
+    padding-top: .5rem;
+}
+
+@media screen and (min-width: 80em) {
+    body {
+        font-size: clamp(1rem, 1.25vw, 3rem);
+    }
+
+    .content__image {
+        zoom: .4;
+    }
+}
